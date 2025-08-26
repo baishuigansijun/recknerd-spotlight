@@ -1,6 +1,7 @@
-import type { MetadataRoute } from 'next'
 import { getAllArticles } from '@/lib/articles'
 
+export const dynamic = 'force-static'   // ✅ 必须：静态导出
+export const revalidate = false         // ✅ 可选
 
 export default async function sitemap(): Promise<({ url: string; lastModified: Date; changeFrequency: string; priority: number })[]> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
