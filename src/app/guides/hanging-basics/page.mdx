@@ -1,4 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import image7 from '@/images/photos/image-7.jpg'
 export const dynamic = 'force-static'
 export const revalidate = false
 export const article = {
@@ -16,6 +18,15 @@ export const metadata = {
 export default (props) => <ArticleLayout article={article} {...props} />
 
 Hanging art well is about **stability**, **sightlines**, and **safety**. A piece can be beautiful, but if it’s too high, crooked, or insecurely hung, it distracts instead of enhancing the room.
+
+<Image
+    src={image7}
+    alt="Room with paintings on the wall"
+    width={1200}
+    height={400}
+    priority
+    className="rounded-xl shadow-md"
+/>
 
 ---
 

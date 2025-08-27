@@ -1,4 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import image6 from '@/images/photos/image-6.jpg'
 export const dynamic = 'force-static'
 export const revalidate = false
 export const article = {
@@ -16,6 +18,15 @@ export const metadata = {
 export default (props) => <ArticleLayout article={article} {...props} />
 
 Canvas prints and oil paintings can both transform a room—but they differ in **texture**, **longevity**, **maintenance needs**, and **overall investment value**.
+
+<Image
+    src={image6}
+    alt="Room with paintings on the wall"
+    width={1200}
+    height={400}
+    priority
+    className="rounded-xl shadow-md"
+/>
 
 ## Quick differences
 - **Oil paintings**: Hand-painted, unique brush texture, higher price, heirloom value, requires more care.
