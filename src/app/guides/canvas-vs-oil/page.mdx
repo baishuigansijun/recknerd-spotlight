@@ -1,9 +1,11 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
+import {ArticleLayout} from '@/components/ArticleLayout'
+import Image from 'next/image'
+import image6 from '@/images/photos/image-6.jpg'
 export const dynamic = 'force-static'
 export const revalidate = false
 export const article = {
     author: 'BestPaintings',
-    date: '2025-08-26',
+    date: '2025-08-25',
     title: 'Canvas Prints vs. Oil Paintings: What’s Right for You?',
     description: 'Texture, durability, pricing, and where each shines.',
 }
@@ -13,9 +15,21 @@ export const metadata = {
     description: article.description,
 }
 
-export default (props) => <ArticleLayout article={article} {...props} />
+export default function Page(props) {
+    return (
+        <ArticleLayout article={article} {...props}>
+            {props.children}
+        </ArticleLayout>
+    )
+}
+
 
 Canvas prints and oil paintings can both transform a room—but they differ in **texture**, **longevity**, **maintenance needs**, and **overall investment value**.
+
+<Image src={image6} alt="Room with paintings on the wall" priority
+       className="rounded-xl shadow-md"/>
+
+
 
 ## Quick differences
 - **Oil paintings**: Hand-painted, unique brush texture, higher price, heirloom value, requires more care.
