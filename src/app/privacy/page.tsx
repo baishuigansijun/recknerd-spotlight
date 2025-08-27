@@ -48,7 +48,7 @@ export default function PrivacyPage() {
       <p>
         You may request correction or deletion of personal information you have provided to us
         (e.g., email correspondence). Contact{' '}
-        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>.
+        <a href="mailto:hello@mytrueartguide.com">hello@mytrueartguide.com</a>.
       </p>
     </main>
   )

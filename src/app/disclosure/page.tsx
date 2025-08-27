@@ -19,7 +19,7 @@ export default function DisclosurePage() {
       </p>
       <p>
         If you have any questions about this disclosure, please contact{' '}
-        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>.
+        <a href="mailto:hello@mytrueartguide.com">hello@mytrueartguide.com</a>.
       </p>
     </main>
   )

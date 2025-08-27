@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from '@/components/Container'
-import portraitImage from '@/images/portrait.jpg'
 
 export const metadata: Metadata = {
   title: 'About | BestPaintings',
@@ -47,8 +45,8 @@ export default function AboutPage() {
             </p>
             <p>
               Questions or ideas? Email us at{' '}
-              <a href="mailto:hello@yourdomain.com" className="text-teal-600 hover:underline">
-                hello@yourdomain.com
+              <a href="mailto:hello@mytrueartguide.com" className="text-teal-600 hover:underline">
+                hello@mytrueartguide.com
               </a>.
             </p>
           </div>

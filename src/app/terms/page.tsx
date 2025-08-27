@@ -45,7 +45,7 @@ export default function TermsPage() {
       <h2>Contact</h2>
       <p>
         Questions about these Terms? Email{' '}
-        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>.
+        <a href="mailto:hello@mytrueartguide.com">hello@mytrueartguide.com</a>.
       </p>
     </main>
   )
