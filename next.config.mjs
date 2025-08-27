@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   output: 'export', // ✅ 关键：静态导出
+  trailingSlash: true,
   images: {
     unoptimized: true, // ✅ 需要用静态导出时必须加
   },
